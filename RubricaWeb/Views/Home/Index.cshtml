@@ -1,0 +1,17 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Benvenuti</h1>
+    <br>
+    <table align ="center">
+    @{
+        foreach(var elemento in @Model)
+        {
+            <tr><td>@elemento</td></tr> 
+        }
+    }
+    </table>
+</div>
